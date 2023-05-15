@@ -16,5 +16,6 @@ jobs:
     - run: ls -al repo
     - uses: ammaraskar/sphinx-action@master
       with:
+        pre-build-command: "pip install sphinx_rtd_theme"
         docs-folder: "docs/"
     - run: ls -al
