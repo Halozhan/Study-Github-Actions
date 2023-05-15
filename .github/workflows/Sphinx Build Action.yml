@@ -8,6 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - run: ls -al
+    - uses: actions/checkout@v3
+      with:
+        repository: Sungmo-OSS-Project/txt_game_prototype
+        ref: v3
+    - run: ls -al
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
