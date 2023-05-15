@@ -12,8 +12,9 @@ jobs:
     - uses: actions/checkout@v3
       with:
         repository: Sungmo-OSS-Project/txt_game_prototype
+        path: repo
         ref: v3
-    - run: ls -al
+    - run: ls -al repo
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
