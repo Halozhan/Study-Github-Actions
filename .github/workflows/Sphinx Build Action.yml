@@ -16,4 +16,5 @@ jobs:
     - run: ls -al repo
     - uses: ammaraskar/sphinx-action@master
       with:
-        docs-folder: "docs/"
+        docs-folder: "/"
+    - run: ls -al
