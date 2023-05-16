@@ -12,12 +12,12 @@ Welcome to 쉘터 서바이벌: 좀비 아포칼립스's documentation!
 
 .. toctree::
    :maxdepth: 2
-
+   :caption: docs:
    docs
 
 .. toctree::
    :maxdepth: 2
-
+   :caption: modules:
    modules
 
 Indices and tables
