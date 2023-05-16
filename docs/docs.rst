@@ -9,3 +9,6 @@
    
 .. automodule:: Storage
    :members:
+
+.. automodule:: Buff
+   :members:
