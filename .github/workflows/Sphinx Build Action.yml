@@ -20,13 +20,13 @@ jobs:
     - uses: ammaraskar/sphinx-action@master
       with:
         pre-build-command: "pip install sphinx_rtd_theme"
-        docs-folder: "docs/"
+        # docs-folder: "/"
     - run: tree -a
     # Create an artifact of the html output.
     - uses: actions/upload-artifact@v1
       with:
         name: DocumentationHTML
-        path: docs/build/html/
+        path: build/html/
     # # Publish built docs to gh-pages branch.
     # # ===============================
     # - name: Commit documentation changes
@@ -53,5 +53,5 @@ jobs:
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs/build/html
+        publish_dir: build/html
     - run: tree -a
