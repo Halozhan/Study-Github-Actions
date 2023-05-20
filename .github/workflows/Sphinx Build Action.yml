@@ -20,7 +20,7 @@ jobs:
     - uses: ammaraskar/sphinx-action@master
       with:
         pre-build-command: "pip install sphinx_rtd_theme"
-        # docs-folder: "/"
+        docs-folder: "/"
     - run: tree -a
     # Create an artifact of the html output.
     - uses: actions/upload-artifact@v1
